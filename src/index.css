@@ -1,0 +1,40 @@
+@import "tailwindcss";
+
+/* Colores y tipografías: cámbialos aquí y se actualiza toda la invitación */
+@theme {
+  --color-oro: #b9822a;
+  --color-oro-claro: #dcae56;
+  --color-marfil: #fbf8f2;
+  --color-tinta: #3d3126;
+  --font-titulo: "Cinzel", serif;
+  --font-script: "Pinyon Script", cursive;
+  --font-texto: "Cormorant Garamond", serif;
+}
+
+html { scroll-behavior: smooth; }
+body { background: var(--color-marfil); color: var(--color-tinta); font-family: var(--font-texto); font-size: 1.2rem; }
+
+/* Animaciones al hacer scroll (componente Reveal) */
+.reveal { opacity: 0; transition: opacity .9s ease, transform .9s cubic-bezier(.2,.7,.2,1), clip-path 1.3s cubic-bezier(.6,0,.2,1); transition-delay: var(--d, 0ms); }
+.reveal[data-v="up"] { transform: translateY(34px); }
+.reveal[data-v="left"] { transform: translateX(-44px); }
+.reveal[data-v="right"] { transform: translateX(44px); }
+.reveal[data-v="zoom"] { transform: scale(.9); }
+.reveal[data-v="clip"] { opacity: 1; }
+.clip-img { clip-path: inset(0 0 100% 0); transition: clip-path 1.3s cubic-bezier(.6,0,.2,1); }
+.reveal.on { opacity: 1; transform: none; }
+.reveal.on .clip-img { clip-path: inset(0); }
+
+/* Destellos de la bienvenida */
+@keyframes destello { 0%,100% { opacity: 0; transform: translateY(0); } 50% { opacity: .9; transform: translateY(-18px); } }
+.destello { position: absolute; border-radius: 9999px; background: var(--color-oro-claro); animation: destello 5s ease-in-out infinite; }
+@keyframes latido { 0%,100% { transform: scale(1); } 50% { transform: scale(1.12); } }
+.latido { animation: latido 2.4s ease-in-out infinite; }
+
+:focus-visible { outline: 2px solid var(--color-oro); outline-offset: 3px; }
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .reveal { opacity: 1; transform: none; transition: none; }
+  .clip-img { clip-path: none; transition: none; }
+  .destello, .latido { animation: none; }
+}

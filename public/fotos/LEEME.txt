@@ -1,0 +1,12 @@
+Reemplaza estos archivos por tus fotos, conservando el nombre:
+
+bienvenida.jpg  -> fondo de la pantalla "Bienvenidos" (vertical)
+portada.jpg     -> foto principal con los nombres (vertical)
+galeria-1.jpg   -> foto debajo del calendario
+galeria-2.jpg   -> foto antes de los padres
+galeria-3.jpg   -> foto del codigo de vestimenta
+galeria-4.jpg   -> foto del codigo de vestimenta
+galeria-5.jpg   -> foto antes de la despedida
+
+Si usas otro nombre o formato (png, webp), cambia la ruta en src/data/boda.js.
+Recomendado: fotos verticales, maximo 1600 px de alto y menos de 500 KB cada una.
