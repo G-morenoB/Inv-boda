@@ -1,7 +1,7 @@
 // TODO EL CONTENIDO EDITABLE VIVE AQUÍ
 
 export const boda = {
-  novios: ['Diana', 'Alvaro'],
+  novios: ['Yolotzin', 'Gael'],
   fecha: '2027-10-11T13:00:00', // formato AAAA-MM-DDTHH:MM:SS (hora local)
   diaTexto: 'Lunes',
   musica: '/musica/cancion.mp3', // coloca tu canción en public/musica/
