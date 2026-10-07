@@ -1,7 +1,7 @@
 // TODO EL CONTENIDO EDITABLE VIVE AQUÍ
 
 export const boda = {
-  novios: ['Yolotzin', 'Gael'],
+  novios: ['Diana', 'Alvaro'],
   fecha: '2027-10-11T13:00:00', // formato AAAA-MM-DDTHH:MM:SS (hora local)
   diaTexto: 'Lunes',
   musica: '/musica/cancion.mp3', // coloca tu canción en public/musica/
@@ -23,7 +23,7 @@ export const boda = {
   },
   padres: [
     { titulo: 'Con la bendición de Dios, y el amor de nuestros padres', nombres: ['Victor Tejeda', 'Alicia Carrasco'] },
-    { titulo: '', nombres: ['Gael Moreno Bataz', 'Yolotzin López Moralez'] },
+    { titulo: '', nombres: ['Arturo Valderrabano', 'Judith Marín'] },
   ],
   padrinos: { titulo: 'En compañía de nuestros padrinos', nombres: ['Nelson Tejeda', 'Tania Valderrabano'] },
   ceremonia: {
